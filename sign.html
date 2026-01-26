@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sign.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="signup-page">
+      <div class="container">
+        <div class="signup">
+          <form class="signup-form">
+            <div id="message-container"></div>
+            <div class="form-group">
+              <label for="signup-username">Username</label>
+              <input type="text" id="signup-username" placeholder="Username" />
+            </div>
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="number" id="age" placeholder="Age" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <label for="plan">Plan</label>
+              <select id="plan">
+                <option value="">Select a plan</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+                <option value="pro">Pro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input
+                type="password"
+                id="signup-password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="retype-password">Retype Password</label>
+              <input
+                type="password"
+                id="retype-password"
+                placeholder="Retype Password"
+              />
+            </div>
+            <button id="button" type="submit" class="signup-btn button">
+              Sign Up
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="sign.js"></script>
+  </body>
+</html>

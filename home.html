@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title></title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="container">
+        <!-- Coins Section -->
+        <div class="coins-section">
+          <div class="coins-display">
+            <span class="coins-count" id="coinsCount"
+              >0<i class="fa-solid fa-coins"></i
+            ></span>
+          </div>
+          <!-- Coins Dropdown -->
+          <div class="coins-dropdown" id="coinsDropdown">
+            <div class="coins-packages">
+              <button class="coin-package" data-amount="25">
+                25 <i class="fa-solid fa-coins"></i>
+              </button>
+              <button class="coin-package" data-amount="50">
+                50 <i class="fa-solid fa-coins"></i>
+              </button>
+              <button class="coin-package" data-amount="100">
+                100 <i class="fa-solid fa-coins"></i>
+              </button>
+              <button class="coin-package" data-amount="200">
+                200 <i class="fa-solid fa-coins"></i>
+              </button>
+              <button class="coin-package" data-amount="500">
+                500 <i class="fa-solid fa-coins"></i>
+              </button>
+              <button class="coin-package" data-amount="1000">
+                1000 <i class="fa-solid fa-coins"></i>
+              </button>
+            </div>
+            <button class="button get-coins-btn" id="getCoinsBtn">
+              Get Coins
+            </button>
+          </div>
+        </div>
+        <!-- Logo (Center) -->
+        <div class="logo-wrapper">
+          <h1 class="logo">Yalla Hagz</h1>
+        </div>
+        <!-- Account Section -->
+        <div class="account-section">
+          <div class="account-circle" id="accountCircle">
+            <span class="account-initials" id="accountInitials">U</span>
+          </div>
+          <!-- Account Info Dropdown -->
+          <div class="account-dropdown" id="accountDropdown">
+            <div class="account-info">
+              <div class="account-avatar">
+                <span id="accountAvatarInitials">U</span>
+              </div>
+              <div class="account-details">
+                <p class="account-username" id="accountUsername">Username</p>
+                <p class="account-email" id="accountEmail">email@example.com</p>
+              </div>
+            </div>
+            <button class="logout-btn" id="logoutBtn">Log Out</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Rooms -->
+    <div class="rooms-section">
+      <div class="container">
+        <div class="info">
+          <h3 class="rooms-title">Avilable Rooms</h3>
+          <div class="search-bar-wrapper">
+            <input
+              type="text"
+              class="search-bar"
+              placeholder="Search for rooms"
+              id="searchInput"
+              autocomplete="off"
+            />
+            <div class="search-suggestions" id="searchSuggestions"></div>
+          </div>
+        </div>
+        <div class="rooms" id="roomsContainer"></div>
+      </div>
+    </div>
+
+    <!-- Create Room Button -->
+    <button class="create-room-btn" id="createRoomBtn">Create A Room</button>
+
+    <!-- Create Room Modal -->
+    <div class="modal" id="createRoomModal">
+      <div class="modal-content">
+        <span class="close" id="closeRoomModal">&times;</span>
+        <h2>Create A Room</h2>
+        <form id="createRoomForm">
+          <div class="form-group">
+            <label for="roomName">Room Name</label>
+            <input type="text" id="roomName" required />
+          </div>
+          <div class="form-group">
+            <label for="courtName">Court Name</label>
+            <input type="text" id="courtName" required />
+          </div>
+          <div class="form-group">
+            <label for="courtLocation">Court Location</label>
+            <input type="text" id="courtLocation" required />
+          </div>
+          <div class="form-group">
+            <label for="roomLevel">Level</label>
+            <input
+              type="text"
+              id="roomLevel"
+              placeholder="e.g., beginner, intermediate, advanced"
+              required
+            />
+          </div>
+          <button type="submit" class="button">Create Room</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Room Details Modal -->
+    <div class="modal" id="roomDetailsModal">
+      <div class="modal-content room-details-modal">
+        <span class="close" id="closeRoomDetailsModal">&times;</span>
+        <h2 id="roomDetailName">Room Name</h2>
+
+        <div class="room-detail-info">
+          <p><strong>Court:</strong> <span id="roomDetailCourt">-</span></p>
+          <p>
+            <strong>Location:</strong> <span id="roomDetailLocation">-</span>
+          </p>
+          <p><strong>Level:</strong> <span id="roomDetailLevel">-</span></p>
+        </div>
+
+        <div class="room-players-section">
+          <h3>Players in Room</h3>
+          <div class="players-list" id="playersList"></div>
+        </div>
+
+        <div class="room-action-buttons">
+          <button class="button room-join-btn" id="roomJoinBtn">
+            Join Room
+          </button>
+          <button class="button room-leave-btn" id="roomLeaveBtn">
+            Leave Room
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>
+          &copy;
+          <span class="footer-link" id="homeLink">YALLA HAGZ</span> Powered By
+          <span class="footer-link" id="alyLink">Aly</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
