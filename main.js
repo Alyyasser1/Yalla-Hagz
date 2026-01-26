@@ -34,7 +34,7 @@ function initializeHeader() {
     coinsCountElement.innerHTML = `${coinsCount} <i class="fa-solid fa-coins"></i>`;
   } else {
     // Redirect to login if no user is logged in
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
 }
 
@@ -82,7 +82,7 @@ function setupEventListeners() {
   const logoutBtn = document.getElementById("logoutBtn");
   logoutBtn.addEventListener("click", () => {
     localStorage.removeItem("currentUser");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   });
 
   // Coin Package Selection

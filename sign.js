@@ -75,7 +75,7 @@ function handleSignup(e) {
 
   // Optionally redirect after successful signup
   setTimeout(() => {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }, 2000);
 }
 
