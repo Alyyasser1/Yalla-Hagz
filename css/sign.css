@@ -23,6 +23,7 @@
 .signup-page .welcome span {
   color: var(--main-color);
   font-weight: bold;
+  font-family: fantasy;
 }
 
 .signup {
@@ -48,7 +49,7 @@
 
 .signup-form .form-group label {
   color: var(--main-color);
-  font-size: 16px;
+  font-size: 21px;
   font-weight: bold;
 }
 
@@ -56,7 +57,7 @@
   padding: 12px 15px;
   border: 2px solid var(--main-color);
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 21px;
   font-family: inherit;
   transition:
     border-color 0.3s,
@@ -78,7 +79,7 @@
   padding: 12px 15px;
   border: 2px solid var(--main-color);
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 21px;
   font-family: inherit;
   transition:
     border-color 0.3s,
